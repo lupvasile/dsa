@@ -1,0 +1,7 @@
+road: 2 5 10 9 22 
+garage: none
+road: 5 10 9 22 
+garage: 2 
+error 25 not on road!
+road: 2 10 5 9 22 
+garage: none

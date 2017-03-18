@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1489257968 source:d:\facultate\laboratoare faculta\dsa\lab 02\2.5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

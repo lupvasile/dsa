@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1489254006 source:d:\facultate\laboratoare faculta\dsa\lab 02\2.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+	"insolve.h"
+
+1489252802 d:\facultate\laboratoare faculta\dsa\lab 02\2.2\list.h
+	<stdio.h>
+	<stdlib.h>
+
+1489161718 d:\facultate\laboratoare faculta\dsa\lab 02\2.2\insolve.h
+	<string.h>
+	<stdio.h>
+
+1489161730 source:d:\facultate\laboratoare faculta\dsa\lab 02\2.2\insolve.c
+	"insolve.h"
+
+1489253701 source:d:\facultate\laboratoare faculta\dsa\lab 02\2.2\list.c
+	"list.h"
+
