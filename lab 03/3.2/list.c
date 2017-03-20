@@ -41,7 +41,8 @@ NodeT *createNode(char *key)
 
     if(ptr)
     {
-        ptr->key = strdup(key);
+        ptr->key = (char*) strdup(key);
+        ptr->count = 1;
         ptr->next = ptr->prev = NULL;
     }
     else
@@ -106,7 +107,7 @@ void printList(FILE *f, ListT *ptrList, char separator)
     {
         NodeT *nodePtr = ptrList->first;
         for(; nodePtr != NULL; nodePtr = nodePtr->next)
-            fprintf(f,"%s%c",nodePtr->key,separator);
+            fprintf(f,"%s:%d%c",nodePtr->key, nodePtr->count, separator);
     }
 
 }
@@ -187,36 +188,47 @@ NodeT *deleteFirst(ListT *ptrList)
 
 void insertInOrder(ListT *ptrList, char *key)
 {
-    NodeT *ptr = ptrList->first, *prevPtr = NULL;
-    for(; ptr && strcmp(ptr->key,key)<0; ptr = ptr->next) prevPtr = ptr;
+    NodeT *ptrNext = ptrList->first, *prevPtr = NULL;
+    for(; ptrNext && stricmp(ptrNext->key,key)<0; ptrNext = ptrNext->next) prevPtr = ptrNext;
 
-    if(ptr && strcmp(ptr->key,key) == 0)///the word already exits
-        ptr->count++;
+    if(ptrNext && stricmp(ptrNext->key,key) == 0)///the word already exits
+        ptrNext->count++;
     else///new word
     {
         ///make the new node
-        NodeT *ptrNode = createNode(key)
-
-        ptrList->count++;
+        NodeT *ptrNode = createNode(key);
 
         if(isEmpty(ptrList)) ///empty list
         {
             ptrList->first = ptrList->last = ptrNode;
-            return;
         }
         else///list not empty
         {
             if(prevPtr == NULL)///node at begining of list
             {
-                elem->next = *ptrList;
-                *ptrList = elem;
+                ptrNode->next = ptrList->first;
+                ptrList->first->prev = ptrNode;
+                ptrList->first = ptrNode;
             }
-            else
+            else if(ptrNext)///node in middle of list
             {
-                elem->next = ptr;
-                prevPtr->next = elem;
+                ptrNode->next = ptrNext;
+                ptrNode->prev = prevPtr;
+                prevPtr->next = ptrNode;
+                ptrNext->prev = ptrNode;
+
+            }
+            else ///node at end of list
+            {
+                ptrNode->next = ptrNext;
+                ptrNode->prev = prevPtr;
+                prevPtr->next = ptrNode;
+                ptrList->last = ptrNode;
             }
 
         }
+
+        ptrList->count++;
     }
+
 }

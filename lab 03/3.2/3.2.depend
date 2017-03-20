@@ -6,3 +6,16 @@
 	<stdio.h>
 	<stdlib.h>
 
+1490031393 source:d:\facultate\laboratoare faculta\dsa\lab 03\3.2\list.c
+	"list.h"
+
+1490031080 d:\facultate\laboratoare faculta\dsa\lab 03\3.2\list.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1490031148 source:d:\facultate\laboratoare faculta\dsa\lab 03\3.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+

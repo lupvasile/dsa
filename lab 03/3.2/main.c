@@ -27,9 +27,9 @@ int main(int argc,char* argv[])
 
     char buf[bufLen];
     while(fscanf(fin,"%s",buf) != EOF)
-                insertInOrder(ptrList,createNode(buf));
+            insertInOrder(ptrList,buf);
 
-    printList(fout,ptrList,'\n');
+    printList(stdout,ptrList,'\n');
 
     fclose(fin);
     fclose(fout);
