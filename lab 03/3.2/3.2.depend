@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1490018175 source:d:\sda\lab 03\3.2\list.c
+1490031627 source:d:\sda\lab 03\3.2\list.c
 	"list.h"
 
-1490017970 d:\sda\lab 03\3.2\list.h
+1490031627 d:\sda\lab 03\3.2\list.h
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
 1490031393 source:d:\facultate\laboratoare faculta\dsa\lab 03\3.2\list.c
 	"list.h"

@@ -29,7 +29,7 @@ int main(int argc,char* argv[])
     while(fscanf(fin,"%s",buf) != EOF)
             insertInOrder(ptrList,buf);
 
-    printList(stdout,ptrList,'\n');
+    printList(fout,ptrList,'\n');
 
     fclose(fin);
     fclose(fout);
