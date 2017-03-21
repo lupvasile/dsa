@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1490079796 source:d:\facultate\laboratoare faculta\dsa\lab 03\3.3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+
+1490078591 d:\facultate\laboratoare faculta\dsa\lab 03\3.3\list.h
+	<stdio.h>
+	<stdlib.h>
+
+1490079768 source:d:\facultate\laboratoare faculta\dsa\lab 03\3.3\list.c
+	"list.h"
+
