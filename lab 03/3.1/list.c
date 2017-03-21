@@ -10,6 +10,18 @@ int isEmpty(ListT *ptr)
     return 0;
 }
 
+char *strdup (const char *s)
+{
+    char *d = malloc (strlen (s) + 1);   // Space for length plus nul
+    if (d == NULL) // No memory
+    {
+        printf("not enougn memory for list");
+        exit(2);          // No memory
+    }
+    strcpy (d,s);                        // Copy the characters
+    return d;                            // Return the new string
+}
+
 ///attempts to allocate memory for a new empry list
 ///on succes returns pointer to list
 ///halts on failure
@@ -41,7 +53,7 @@ NodeT *createNode(char *s)
 
     if(ptr)
     {
-        ptr->key = strdup(s);
+        ptr->key = (char*) strdup(s);
         ptr->next = NULL;
     }
     else
@@ -117,7 +129,7 @@ void printList(FILE *f, ListT *ptrList, char separator)
     }
 
 }
-
+/*
 ///receives a list pointer and a key
 ///returns a pointer to an element with given key if fount
 ///NULL otherwise
@@ -131,7 +143,7 @@ NodeT *find(ListT *ptrList,int key)
 
     return NULL;
 }
-
+*/
 /*
 ///receives a list pointer and a key
 ///erases a node with given key from list and returns pointer to it

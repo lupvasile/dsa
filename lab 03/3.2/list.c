@@ -10,6 +10,19 @@ int isEmpty(ListT *ptr)
     return 0;
 }
 
+char *strdup (const char *s)
+{
+    char *d = malloc (strlen (s) + 1);   // Space for length plus nul
+    if (d == NULL) // No memory
+    {
+        printf("not enougn memory for list");
+        exit(2);          // No memory
+    }
+    strcpy (d,s);                        // Copy the characters
+    return d;                            // Return the new string
+}
+
+
 ///attempts to allocate memory for a new empry list
 ///on succes returns pointer to list
 ///halts on failure
@@ -109,7 +122,16 @@ void printList(FILE *f, ListT *ptrList, char separator)
         for(; nodePtr != NULL; nodePtr = nodePtr->next)
             fprintf(f,"%s:%d%c",nodePtr->key, nodePtr->count, separator);
     }
-
+}
+void printRevList(FILE *f, ListT *ptrList, char separator)
+{
+    if(isEmpty(ptrList)) fprintf(f,"none%c",separator);
+    else
+    {
+        NodeT *nodePtr = ptrList->last;
+        for(; nodePtr != NULL; nodePtr = nodePtr->prev)
+            fprintf(f,"%s:%d%c",nodePtr->key, nodePtr->count, separator);
+    }
 }
 
 /*
@@ -185,6 +207,22 @@ NodeT *deleteFirst(ListT *ptrList)
     return ptr;
 }
 */
+
+int stricmp (const char *s1, const char *s2)
+{
+   if (s1 == NULL) return s2 == NULL ? 0 : -(*s2);
+   if (s2 == NULL) return *s1;
+
+   char c1, c2;
+   while ((c1 = tolower (*s1)) == (c2 = tolower (*s2)))
+   {
+     if (*s1 == '\0') break;
+     ++s1; ++s2;
+   }
+
+   return c1 - c2;
+}
+
 
 void insertInOrder(ListT *ptrList, char *key)
 {

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "list.h"
 
 FILE *openCheck(const char *name,const char *mode)
@@ -14,6 +15,32 @@ FILE *openCheck(const char *name,const char *mode)
     return f;
 }
 
+///returns max length of a word
+int getMaxLen(FILE *f)
+{
+    char ch;
+    int maxLen = 0, currLen = 0;
+
+    while(1)
+    {
+        ch = getc(f);
+        if(ch == EOF || isspace(ch))
+        {
+            if(currLen > maxLen) maxLen = currLen;
+            currLen = 0;
+
+            if(ch == EOF) break;
+            continue;
+        }
+
+        currLen++;
+    }
+
+    rewind(f);
+    return maxLen;
+}
+
+
 int main(int argc,char *argv[])
 {
     FILE *fin = openCheck(argv[1],"r");
@@ -22,11 +49,14 @@ int main(int argc,char *argv[])
     ListT *ptrList = createList();
 
     int nrKids, i, offset;
+    int bufLen = getMaxLen(fin)+2;
+    char buf[bufLen];
+
     fscanf(fin,"%d", &nrKids);
+
 
     for(i = 1; i <= nrKids; ++i)
     {
-        char buf[2014];
         fscanf(fin,"%s",buf);
 
         NodeT *ptr = createNode(buf);
@@ -44,5 +74,7 @@ int main(int argc,char *argv[])
 
     printList(fout,ptrList,0);
 
+    fclose(fin);
+    fclose(fout);
     return 0;
 }
