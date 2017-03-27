@@ -1,5 +1,13 @@
 # depslib dependency file v1.0
-1490638908 source:d:\facultate\laboratoare faculta\dsa\lab 04\4.2\main.c
+1490653553 source:d:\facultate\laboratoare faculta\dsa\lab 04\4.2\main.c
 	<stdio.h>
 	<stdlib.h>
+	"tree.h"
+
+1490653524 d:\facultate\laboratoare faculta\dsa\lab 04\4.2\tree.h
+	<stdio.h>
+	<stdlib.h>
+
+1490653590 source:d:\facultate\laboratoare faculta\dsa\lab 04\4.2\tree.c
+	"tree.h"
 

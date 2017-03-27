@@ -1,0 +1,64 @@
+Height of tree: 3
+Nr. of leaves: 3
+
+traversals before swapping
+Preorder listing
+ A
+  B
+   D
+    G
+  C
+   E
+   F
+    H
+
+Inorder listing
+   D
+    G
+  B
+ A
+   E
+  C
+   F
+    H
+
+Postorder listing
+    G
+   D
+  B
+   E
+    H
+   F
+  C
+ A
+
+traversals after swapping sons of A
+Preorder listing
+ A
+  C
+   E
+   F
+    H
+  B
+   D
+    G
+
+Inorder listing
+   E
+  C
+   F
+    H
+ A
+   D
+    G
+  B
+
+Postorder listing
+   E
+    H
+   F
+  C
+    G
+   D
+  B
+ A
