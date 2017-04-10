@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1491766129 source:d:\facultate\laboratoare faculta\dsa\lab 06\6.3.2\main.c
+	<stdio.h>
+	<string.h>
+	"HASH_OPEN.h"
+	"TEST.h"
+
+1491765982 d:\facultate\laboratoare faculta\dsa\lab 06\6.3.2\hash_open.h
+	<stdlib.h>
+	<stdio.h>
+
+1491766085 source:d:\facultate\laboratoare faculta\dsa\lab 06\6.3.2\hash_open.c
+	"HASH_OPEN.h"
+
+1491759374 source:d:\facultate\laboratoare faculta\dsa\lab 06\6.3.2\test.c
+	"TEST.h"
+
+1491759788 d:\facultate\laboratoare faculta\dsa\lab 06\6.3.2\test.h
+	<stdio.h>
+

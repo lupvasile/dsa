@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1491296733 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.2\bst.c
+	"BST.h"
+
+1491296748 d:\facultate\laboratoare faculta\dsa\lab 05\5.2\bst.h
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+
+1491296971 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"BST.h"
+
+1491303187 source:c:\users\vasil_000\desktop\lab 05\5.2\bst.c
+	"BST.h"
+
+1491296748 c:\users\vasil_000\desktop\lab 05\5.2\bst.h
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+
+1491307010 source:c:\users\vasil_000\desktop\lab 05\5.2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"BST.h"
+

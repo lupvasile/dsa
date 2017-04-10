@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1491300295 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.6\bst.c
+	"BST.h"
+
+1491299493 d:\facultate\laboratoare faculta\dsa\lab 05\5.6\bst.h
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+
+1491300383 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BST.h"
+

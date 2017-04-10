@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1491294035 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.3\bst.c
+	"BST.h"
+
+1491292991 d:\facultate\laboratoare faculta\dsa\lab 05\5.3\bst.h
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+
+1491295369 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"BST.h"
+	"pharma.h"
+	"TEST.h"
+
+1491295142 d:\facultate\laboratoare faculta\dsa\lab 05\5.3\pharma.h
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1491295085 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.3\pharma.c
+	"pharma.h"
+
+1491295375 d:\facultate\laboratoare faculta\dsa\lab 05\5.3\test.h
+	<stdio.h>
+
+1491295021 source:d:\facultate\laboratoare faculta\dsa\lab 05\5.3\test.c
+	"TEST.h"
+
