@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1491981271 source:c:\users\vasil_000\desktop\lucru 2\linedottree\io_management.c
+	"IO_Management.h"
+
+1491981686 c:\users\vasil_000\desktop\lucru 2\linedottree\io_management.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1491982002 source:c:\users\vasil_000\desktop\lucru 2\linedottree\ldtree.c
+	"LDTree.h"
+
+1491981939 c:\users\vasil_000\desktop\lucru 2\linedottree\ldtree.h
+	"IO_Management.h"
+
+1491982066 source:c:\users\vasil_000\desktop\lucru 2\linedottree\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LDTree.h"
+
