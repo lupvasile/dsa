@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1493121490 source:d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\io_management.c
+	"IO_Management.h"
+
+1493118698 d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\io_management.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"list.h"
+
+1490033719 d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\list.h
+	<stdio.h>
+	<stdlib.h>
+
+1490033719 source:d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\list.c
+	"list.h"
+
+1493124168 source:d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\main.c
+	<stdio.h>
+	<string.h>
+	"TEST.h"
+	"IO_Management.h"
+	"list.h"
+
+1493124134 d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\test.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1493124239 source:d:\facultate\laboratoare faculta\dsa\lab 07\7.3.1\test.c
+	"TEST.h"
+
